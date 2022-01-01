@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="./images/clipboard.png" type="image/png">
+	<title>Text Modifier</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- fonts  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<!-- fonts -->
+</head>
+
+<body>
+	<div>
+		<section id="container">
+			<section id="content">
+				<h1>Title</h1>
+				<p>Paragraph</p>
+			</section>
+			<input oninput="ttl()" id="h1" type="text" placeholder="Title" required>
+			<textarea oninput="paragraph()" id="prg" type="text" placeholder="Paragraph"></textarea>
+
+			<section id="buttons">
+				<button class="resbttn" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+					onclick="resetChanges(this)">Reset</button>
+				<br>
+				<div class="button-box">
+					<h2 class="color">Color</h2>
+					<button class="bttn" onmouseover="onOver(this)" onmouseout="onOut(this)"
+						onclick="changeColor(this)">Red</button>
+					<button class="bttn" onmouseover="onOver(this)" onmouseout="onOut(this)"
+						onclick="changeColor(this)">Green</button>
+					<button class="bttn" onmouseover="onOver(this)" onmouseout="onOut(this)"
+						onclick="changeColor(this)">Blue</button>
+				</div>
+
+				<div class="button-box">
+					<h2 class="font-family">Font Family</h2>
+					<button id="font1" class="bttn2" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="changeFontPacific(this)">Pacifico</button>
+					<button id="font2" class="bttn2" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="changeFontPushster(this)">Pushster</button>
+					<button id="font3" class="bttn2" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="changeFontArial(this)">Arial</button>
+				</div>
+
+				<div class="button-box">
+					<h2 class="align">Align</h2>
+					<button class="bttn3" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="text(this)">Left</button>
+					<button class="bttn3" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="text(this)">Center</button>
+					<button class="bttn3" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="text(this)">Right</button>
+				</div>
+
+				<div class="button-box">
+					<h2 class="size">Size</h2>
+					<button class="bttn3" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="changeFontSize1(this)">1x</button>
+					<button class="bttn3" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="changeFontSize2(this)">2x</button>
+					<button class="bttn3" onmouseover="onOver2(this)" onmouseout="onOut(this)"
+						onclick="changeFontSize3(this)">3x</button>
+				</div>
+
+			</section>
+		</section>
+	</div>
+
+	<script src="script.js">
+	</script>
+</body>
+
+</html>
